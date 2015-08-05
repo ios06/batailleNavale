@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D43AAB11B71FFFA00C286BC /* Grille.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43AAB01B71FFFA00C286BC /* Grille.swift */; };
+		3D43AAB31B7200DE00C286BC /* Bateau.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43AAB21B7200DE00C286BC /* Bateau.swift */; };
+		3D59E8021B7215B500FEF85F /* Partie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59E8011B7215B500FEF85F /* Partie.swift */; };
+		3D82D4FE1B710BD800150214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82D4FD1B710BD800150214 /* AppDelegate.swift */; };
+		3D82D5001B710BD800150214 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82D4FF1B710BD800150214 /* ViewController.swift */; };
+		3D82D5031B710BD800150214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D82D5011B710BD800150214 /* Main.storyboard */; };
+		3D82D5051B710BD800150214 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D82D5041B710BD800150214 /* Images.xcassets */; };
+		3D82D5081B710BD800150214 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D82D5061B710BD800150214 /* LaunchScreen.xib */; };
+		3D82D5141B710BD800150214 /* BatailleNavaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D82D5131B710BD800150214 /* BatailleNavaleTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D82D50E1B710BD800150214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D82D4F01B710BD800150214 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D82D4F71B710BD800150214;
+			remoteInfo = BatailleNavale;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D43AAB01B71FFFA00C286BC /* Grille.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grille.swift; sourceTree = "<group>"; };
+		3D43AAB21B7200DE00C286BC /* Bateau.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bateau.swift; sourceTree = "<group>"; };
+		3D59E8011B7215B500FEF85F /* Partie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Partie.swift; sourceTree = "<group>"; };
+		3D82D4F81B710BD800150214 /* BatailleNavale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatailleNavale.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D82D4FC1B710BD800150214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D82D4FD1B710BD800150214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D82D4FF1B710BD800150214 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D82D5021B710BD800150214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D82D5041B710BD800150214 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D82D5071B710BD800150214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3D82D50D1B710BD800150214 /* BatailleNavaleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatailleNavaleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D82D5121B710BD800150214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D82D5131B710BD800150214 /* BatailleNavaleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatailleNavaleTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D82D4F51B710BD800150214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D82D50A1B710BD800150214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D82D4EF1B710BD800150214 = {
+			isa = PBXGroup;
+			children = (
+				3D82D4FA1B710BD800150214 /* BatailleNavale */,
+				3D82D5101B710BD800150214 /* BatailleNavaleTests */,
+				3D82D4F91B710BD800150214 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D82D4F91B710BD800150214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D82D4F81B710BD800150214 /* BatailleNavale.app */,
+				3D82D50D1B710BD800150214 /* BatailleNavaleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D82D4FA1B710BD800150214 /* BatailleNavale */ = {
+			isa = PBXGroup;
+			children = (
+				3D43AAB21B7200DE00C286BC /* Bateau.swift */,
+				3D82D4FD1B710BD800150214 /* AppDelegate.swift */,
+				3D82D4FF1B710BD800150214 /* ViewController.swift */,
+				3D82D5011B710BD800150214 /* Main.storyboard */,
+				3D43AAB01B71FFFA00C286BC /* Grille.swift */,
+				3D59E8011B7215B500FEF85F /* Partie.swift */,
+				3D82D5041B710BD800150214 /* Images.xcassets */,
+				3D82D5061B710BD800150214 /* LaunchScreen.xib */,
+				3D82D4FB1B710BD800150214 /* Supporting Files */,
+			);
+			path = BatailleNavale;
+			sourceTree = "<group>";
+		};
+		3D82D4FB1B710BD800150214 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D82D4FC1B710BD800150214 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D82D5101B710BD800150214 /* BatailleNavaleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D82D5131B710BD800150214 /* BatailleNavaleTests.swift */,
+				3D82D5111B710BD800150214 /* Supporting Files */,
+			);
+			path = BatailleNavaleTests;
+			sourceTree = "<group>";
+		};
+		3D82D5111B710BD800150214 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D82D5121B710BD800150214 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D82D4F71B710BD800150214 /* BatailleNavale */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D82D5171B710BD800150214 /* Build configuration list for PBXNativeTarget "BatailleNavale" */;
+			buildPhases = (
+				3D82D4F41B710BD800150214 /* Sources */,
+				3D82D4F51B710BD800150214 /* Frameworks */,
+				3D82D4F61B710BD800150214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BatailleNavale;
+			productName = BatailleNavale;
+			productReference = 3D82D4F81B710BD800150214 /* BatailleNavale.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D82D50C1B710BD800150214 /* BatailleNavaleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D82D51A1B710BD800150214 /* Build configuration list for PBXNativeTarget "BatailleNavaleTests" */;
+			buildPhases = (
+				3D82D5091B710BD800150214 /* Sources */,
+				3D82D50A1B710BD800150214 /* Frameworks */,
+				3D82D50B1B710BD800150214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D82D50F1B710BD800150214 /* PBXTargetDependency */,
+			);
+			name = BatailleNavaleTests;
+			productName = BatailleNavaleTests;
+			productReference = 3D82D50D1B710BD800150214 /* BatailleNavaleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D82D4F01B710BD800150214 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ios06;
+				TargetAttributes = {
+					3D82D4F71B710BD800150214 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					3D82D50C1B710BD800150214 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3D82D4F71B710BD800150214;
+					};
+				};
+			};
+			buildConfigurationList = 3D82D4F31B710BD800150214 /* Build configuration list for PBXProject "BatailleNavale" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D82D4EF1B710BD800150214;
+			productRefGroup = 3D82D4F91B710BD800150214 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D82D4F71B710BD800150214 /* BatailleNavale */,
+				3D82D50C1B710BD800150214 /* BatailleNavaleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D82D4F61B710BD800150214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D82D5031B710BD800150214 /* Main.storyboard in Resources */,
+				3D82D5081B710BD800150214 /* LaunchScreen.xib in Resources */,
+				3D82D5051B710BD800150214 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D82D50B1B710BD800150214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D82D4F41B710BD800150214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D59E8021B7215B500FEF85F /* Partie.swift in Sources */,
+				3D82D5001B710BD800150214 /* ViewController.swift in Sources */,
+				3D43AAB31B7200DE00C286BC /* Bateau.swift in Sources */,
+				3D43AAB11B71FFFA00C286BC /* Grille.swift in Sources */,
+				3D82D4FE1B710BD800150214 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D82D5091B710BD800150214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D82D5141B710BD800150214 /* BatailleNavaleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D82D50F1B710BD800150214 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D82D4F71B710BD800150214 /* BatailleNavale */;
+			targetProxy = 3D82D50E1B710BD800150214 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D82D5011B710BD800150214 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D82D5021B710BD800150214 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D82D5061B710BD800150214 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D82D5071B710BD800150214 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D82D5151B710BD800150214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D82D5161B710BD800150214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D82D5181B710BD800150214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BatailleNavale/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D82D5191B710BD800150214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BatailleNavale/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3D82D51B1B710BD800150214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BatailleNavaleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BatailleNavale.app/BatailleNavale";
+			};
+			name = Debug;
+		};
+		3D82D51C1B710BD800150214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BatailleNavaleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BatailleNavale.app/BatailleNavale";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D82D4F31B710BD800150214 /* Build configuration list for PBXProject "BatailleNavale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D82D5151B710BD800150214 /* Debug */,
+				3D82D5161B710BD800150214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D82D5171B710BD800150214 /* Build configuration list for PBXNativeTarget "BatailleNavale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D82D5181B710BD800150214 /* Debug */,
+				3D82D5191B710BD800150214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D82D51A1B710BD800150214 /* Build configuration list for PBXNativeTarget "BatailleNavaleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D82D51B1B710BD800150214 /* Debug */,
+				3D82D51C1B710BD800150214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D82D4F01B710BD800150214 /* Project object */;
+}
