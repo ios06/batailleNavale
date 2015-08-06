@@ -1289,25 +1289,25 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnL-9g-9ok">
-                                <rect key="frame" x="257" y="550" width="60" height="30"/>
+                                <rect key="frame" x="178" y="550" width="123" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coups :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tM-sE-fis">
-                                <rect key="frame" x="189" y="550" width="60" height="30"/>
+                                <rect key="frame" x="46" y="550" width="124" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWE-ns-lMc">
-                                <rect key="frame" x="393" y="550" width="60" height="30"/>
+                                <rect key="frame" x="441" y="550" width="123" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Af-cW-bu3">
-                                <rect key="frame" x="325" y="550" width="60" height="30"/>
+                                <rect key="frame" x="309" y="550" width="124" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -1479,6 +1479,7 @@
                             <constraint firstItem="Voq-WO-rNg" firstAttribute="width" secondItem="SpV-9N-vFZ" secondAttribute="width" id="IC0-Fs-xSN"/>
                             <constraint firstItem="Voq-WO-rNg" firstAttribute="width" secondItem="sHH-P9-3h2" secondAttribute="width" id="IR2-FH-edy"/>
                             <constraint firstItem="H6V-NV-Yg5" firstAttribute="leading" secondItem="FxV-e9-neJ" secondAttribute="leading" id="J9p-E9-RmQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PWE-ns-lMc" secondAttribute="trailing" constant="20" id="JGx-Bf-Uqd"/>
                             <constraint firstItem="Cwf-gK-ykq" firstAttribute="leading" secondItem="V5z-1D-ndb" secondAttribute="trailing" constant="1" id="JJl-J1-QZp"/>
                             <constraint firstItem="Voq-WO-rNg" firstAttribute="height" secondItem="gdz-ID-hhc" secondAttribute="height" id="JP2-2y-lte"/>
                             <constraint firstItem="Voq-WO-rNg" firstAttribute="height" secondItem="glE-0H-nGu" secondAttribute="height" id="JpL-t6-sqH"/>
@@ -1490,7 +1491,7 @@
                             <constraint firstItem="Voq-WO-rNg" firstAttribute="height" secondItem="oua-1z-GsG" secondAttribute="height" id="KjO-LF-rsu"/>
                             <constraint firstItem="fKG-L9-Hmy" firstAttribute="baseline" secondItem="wfl-5G-GHU" secondAttribute="baseline" id="KmN-d8-Tz4"/>
                             <constraint firstItem="8YW-Yw-bOg" firstAttribute="leading" secondItem="C0K-5G-mF5" secondAttribute="leading" id="LBV-g3-eG1"/>
-                            <constraint firstItem="1tM-sE-fis" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="173" id="LMN-KX-PmZ"/>
+                            <constraint firstItem="1tM-sE-fis" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="LMN-KX-PmZ"/>
                             <constraint firstItem="Voq-WO-rNg" firstAttribute="height" secondItem="8YW-Yw-bOg" secondAttribute="height" id="LRL-v7-hxJ"/>
                             <constraint firstItem="Voq-WO-rNg" firstAttribute="height" secondItem="v5r-p4-Udo" secondAttribute="height" id="LT9-ly-Rfq"/>
                             <constraint firstItem="pKu-pi-Rsd" firstAttribute="baseline" secondItem="C0K-5G-mF5" secondAttribute="baseline" id="LjS-Np-A39"/>
@@ -1756,10 +1757,117 @@
                             <constraint firstItem="Voq-WO-rNg" firstAttribute="width" secondItem="BkW-BX-koH" secondAttribute="width" id="zlg-88-JK2"/>
                             <constraint firstItem="Voq-WO-rNg" firstAttribute="width" secondItem="qn2-HW-6kE" secondAttribute="width" id="zzo-96-Luq"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KLd-bL-KVO"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="affichageCoups" destination="vnL-9g-9ok" id="gqF-LQ-ZN4"/>
                         <outlet property="affichageScore" destination="PWE-ns-lMc" id="hHm-J1-Lji"/>
+                        <outletCollection property="boutonsGrille" destination="qnk-Yx-EYO" collectionClass="NSMutableArray" id="Btg-18-9le"/>
+                        <outletCollection property="boutonsGrille" destination="MBE-b9-g2l" collectionClass="NSMutableArray" id="IRT-Kd-2JW"/>
+                        <outletCollection property="boutonsGrille" destination="peP-TS-Bb7" collectionClass="NSMutableArray" id="99x-he-C4u"/>
+                        <outletCollection property="boutonsGrille" destination="oua-1z-GsG" collectionClass="NSMutableArray" id="nmT-ku-zDC"/>
+                        <outletCollection property="boutonsGrille" destination="fhr-Nr-kLz" collectionClass="NSMutableArray" id="GMS-LN-0gv"/>
+                        <outletCollection property="boutonsGrille" destination="glE-0H-nGu" collectionClass="NSMutableArray" id="pLE-8a-qUU"/>
+                        <outletCollection property="boutonsGrille" destination="7HW-85-25R" collectionClass="NSMutableArray" id="9eK-Ni-Mz0"/>
+                        <outletCollection property="boutonsGrille" destination="4FY-nU-ie0" collectionClass="NSMutableArray" id="2lg-xg-O7E"/>
+                        <outletCollection property="boutonsGrille" destination="Voq-WO-rNg" collectionClass="NSMutableArray" id="tJs-PN-CKt"/>
+                        <outletCollection property="boutonsGrille" destination="xQN-cn-hzB" collectionClass="NSMutableArray" id="GjG-Xc-HtZ"/>
+                        <outletCollection property="boutonsGrille" destination="V5z-1D-ndb" collectionClass="NSMutableArray" id="dMP-5Q-VQI"/>
+                        <outletCollection property="boutonsGrille" destination="Cwf-gK-ykq" collectionClass="NSMutableArray" id="dGf-vn-UgI"/>
+                        <outletCollection property="boutonsGrille" destination="G0e-wY-h7V" collectionClass="NSMutableArray" id="Awo-X5-BKm"/>
+                        <outletCollection property="boutonsGrille" destination="1Md-Ha-l9e" collectionClass="NSMutableArray" id="1HG-Ir-dmk"/>
+                        <outletCollection property="boutonsGrille" destination="w0y-iC-HBG" collectionClass="NSMutableArray" id="urP-qQ-Uwv"/>
+                        <outletCollection property="boutonsGrille" destination="5Zn-Kt-vJ2" collectionClass="NSMutableArray" id="Haz-Fc-Vf8"/>
+                        <outletCollection property="boutonsGrille" destination="ohF-pE-ZsM" collectionClass="NSMutableArray" id="aP4-Nb-1wq"/>
+                        <outletCollection property="boutonsGrille" destination="d1k-oS-fCn" collectionClass="NSMutableArray" id="6hX-08-KLD"/>
+                        <outletCollection property="boutonsGrille" destination="dvN-Sa-uf0" collectionClass="NSMutableArray" id="ATT-Xp-hYt"/>
+                        <outletCollection property="boutonsGrille" destination="BkW-BX-koH" collectionClass="NSMutableArray" id="71S-gs-mGR"/>
+                        <outletCollection property="boutonsGrille" destination="4FY-nU-ie0" collectionClass="NSMutableArray" id="NCA-iX-v0d"/>
+                        <outletCollection property="boutonsGrille" destination="5fj-C4-dJH" collectionClass="NSMutableArray" id="qlA-HC-JYj"/>
+                        <outletCollection property="boutonsGrille" destination="pUl-RY-I50" collectionClass="NSMutableArray" id="iPf-qF-bZj"/>
+                        <outletCollection property="boutonsGrille" destination="JE2-0N-ZeK" collectionClass="NSMutableArray" id="fRZ-hr-8Ih"/>
+                        <outletCollection property="boutonsGrille" destination="SpV-9N-vFZ" collectionClass="NSMutableArray" id="hk6-Pr-34l"/>
+                        <outletCollection property="boutonsGrille" destination="NXZ-gg-JFt" collectionClass="NSMutableArray" id="wKG-tz-IEh"/>
+                        <outletCollection property="boutonsGrille" destination="iRk-Oh-ypU" collectionClass="NSMutableArray" id="JBx-J3-97N"/>
+                        <outletCollection property="boutonsGrille" destination="MH0-H3-Bef" collectionClass="NSMutableArray" id="G1b-1v-ABR"/>
+                        <outletCollection property="boutonsGrille" destination="pKu-pi-Rsd" collectionClass="NSMutableArray" id="qV5-do-gHl"/>
+                        <outletCollection property="boutonsGrille" destination="C0K-5G-mF5" collectionClass="NSMutableArray" id="ejc-dF-Us2"/>
+                        <outletCollection property="boutonsGrille" destination="YEY-38-etR" collectionClass="NSMutableArray" id="5cV-RL-Xhk"/>
+                        <outletCollection property="boutonsGrille" destination="4pR-ra-nNW" collectionClass="NSMutableArray" id="Pte-RU-qpe"/>
+                        <outletCollection property="boutonsGrille" destination="bNG-Kw-VuN" collectionClass="NSMutableArray" id="Ahi-LD-aG4"/>
+                        <outletCollection property="boutonsGrille" destination="vlb-3K-kBP" collectionClass="NSMutableArray" id="vya-Yb-zNc"/>
+                        <outletCollection property="boutonsGrille" destination="26f-r1-XdG" collectionClass="NSMutableArray" id="ZUO-Hm-8hU"/>
+                        <outletCollection property="boutonsGrille" destination="6ll-Fp-3Yj" collectionClass="NSMutableArray" id="2pP-0W-5q1"/>
+                        <outletCollection property="boutonsGrille" destination="RmE-GJ-kfL" collectionClass="NSMutableArray" id="lrW-KR-TlK"/>
+                        <outletCollection property="boutonsGrille" destination="uxF-nb-uu4" collectionClass="NSMutableArray" id="HbJ-S6-nfi"/>
+                        <outletCollection property="boutonsGrille" destination="8YW-Yw-bOg" collectionClass="NSMutableArray" id="8Qf-bl-U5g"/>
+                        <outletCollection property="boutonsGrille" destination="StA-XR-vab" collectionClass="NSMutableArray" id="jLy-dW-i5n"/>
+                        <outletCollection property="boutonsGrille" destination="9un-1P-RsL" collectionClass="NSMutableArray" id="lsm-cW-ryo"/>
+                        <outletCollection property="boutonsGrille" destination="sHH-P9-3h2" collectionClass="NSMutableArray" id="hrs-jy-aTL"/>
+                        <outletCollection property="boutonsGrille" destination="30V-1g-x9P" collectionClass="NSMutableArray" id="BDs-IM-F8g"/>
+                        <outletCollection property="boutonsGrille" destination="fNm-EE-xtY" collectionClass="NSMutableArray" id="h5l-od-Wc0"/>
+                        <outletCollection property="boutonsGrille" destination="IKE-EA-AhL" collectionClass="NSMutableArray" id="Lti-o5-pFs"/>
+                        <outletCollection property="boutonsGrille" destination="wyq-8V-Dsj" collectionClass="NSMutableArray" id="TGl-xa-wCl"/>
+                        <outletCollection property="boutonsGrille" destination="6pX-is-qp0" collectionClass="NSMutableArray" id="Hg9-EZ-RLW"/>
+                        <outletCollection property="boutonsGrille" destination="jPz-Ss-8kI" collectionClass="NSMutableArray" id="eGT-K1-Uew"/>
+                        <outletCollection property="boutonsGrille" destination="enz-P9-vh0" collectionClass="NSMutableArray" id="PVf-IQ-Mch"/>
+                        <outletCollection property="boutonsGrille" destination="gHv-MY-rzn" collectionClass="NSMutableArray" id="ZJ4-mp-oj0"/>
+                        <outletCollection property="boutonsGrille" destination="cLJ-tO-rTK" collectionClass="NSMutableArray" id="bze-yY-HLh"/>
+                        <outletCollection property="boutonsGrille" destination="EiV-GA-iPc" collectionClass="NSMutableArray" id="vgw-j2-vsu"/>
+                        <outletCollection property="boutonsGrille" destination="Mgo-g7-73n" collectionClass="NSMutableArray" id="qui-37-AgG"/>
+                        <outletCollection property="boutonsGrille" destination="H6V-NV-Yg5" collectionClass="NSMutableArray" id="Njv-V4-sxP"/>
+                        <outletCollection property="boutonsGrille" destination="Thi-bR-Q3r" collectionClass="NSMutableArray" id="m6m-rN-XJv"/>
+                        <outletCollection property="boutonsGrille" destination="oaG-my-vfT" collectionClass="NSMutableArray" id="xj8-46-Tq3"/>
+                        <outletCollection property="boutonsGrille" destination="yl4-E5-KGn" collectionClass="NSMutableArray" id="c2d-jN-VBZ"/>
+                        <outletCollection property="boutonsGrille" destination="kbp-PQ-Xo5" collectionClass="NSMutableArray" id="cFU-OI-yrD"/>
+                        <outletCollection property="boutonsGrille" destination="zVI-pZ-W5s" collectionClass="NSMutableArray" id="D5g-9b-b1t"/>
+                        <outletCollection property="boutonsGrille" destination="o6c-mM-27K" collectionClass="NSMutableArray" id="twM-EJ-DYc"/>
+                        <outletCollection property="boutonsGrille" destination="Yr2-Xc-1kT" collectionClass="NSMutableArray" id="4aF-Vh-lYx"/>
+                        <outletCollection property="boutonsGrille" destination="qn2-HW-6kE" collectionClass="NSMutableArray" id="EVr-uj-m49"/>
+                        <outletCollection property="boutonsGrille" destination="aGo-fZ-cw0" collectionClass="NSMutableArray" id="Fbn-mi-6hg"/>
+                        <outletCollection property="boutonsGrille" destination="FxV-e9-neJ" collectionClass="NSMutableArray" id="l6d-kp-yZG"/>
+                        <outletCollection property="boutonsGrille" destination="Ju3-yP-GKP" collectionClass="NSMutableArray" id="V20-da-arD"/>
+                        <outletCollection property="boutonsGrille" destination="wfl-5G-GHU" collectionClass="NSMutableArray" id="iab-pf-jIK"/>
+                        <outletCollection property="boutonsGrille" destination="fKG-L9-Hmy" collectionClass="NSMutableArray" id="Euh-88-pLo"/>
+                        <outletCollection property="boutonsGrille" destination="v5r-p4-Udo" collectionClass="NSMutableArray" id="k5E-iH-VW8"/>
+                        <outletCollection property="boutonsGrille" destination="waz-m6-jZj" collectionClass="NSMutableArray" id="OvT-fR-T01"/>
+                        <outletCollection property="boutonsGrille" destination="CHX-D2-ImM" collectionClass="NSMutableArray" id="uDo-2r-aDK"/>
+                        <outletCollection property="boutonsGrille" destination="WGG-g8-Gs6" collectionClass="NSMutableArray" id="h5E-de-gBs"/>
+                        <outletCollection property="boutonsGrille" destination="s9Y-90-0E8" collectionClass="NSMutableArray" id="Gaz-Kt-rWG"/>
+                        <outletCollection property="boutonsGrille" destination="SvR-1O-RU2" collectionClass="NSMutableArray" id="agC-K7-7hE"/>
+                        <outletCollection property="boutonsGrille" destination="Eem-dO-PKg" collectionClass="NSMutableArray" id="ht8-rz-RNa"/>
+                        <outletCollection property="boutonsGrille" destination="1tx-u3-wXe" collectionClass="NSMutableArray" id="8CC-eI-sE6"/>
+                        <outletCollection property="boutonsGrille" destination="Pas-XO-f4w" collectionClass="NSMutableArray" id="6Rc-ei-7Ge"/>
+                        <outletCollection property="boutonsGrille" destination="AAr-oq-lJH" collectionClass="NSMutableArray" id="Cin-S8-lOa"/>
+                        <outletCollection property="boutonsGrille" destination="cZg-Nn-pYv" collectionClass="NSMutableArray" id="vVK-gj-UR4"/>
+                        <outletCollection property="boutonsGrille" destination="E0c-ED-hS7" collectionClass="NSMutableArray" id="aKu-sX-JWz"/>
+                        <outletCollection property="boutonsGrille" destination="M6A-wo-uqx" collectionClass="NSMutableArray" id="Pz1-Qo-GY9"/>
+                        <outletCollection property="boutonsGrille" destination="ChC-nB-nK1" collectionClass="NSMutableArray" id="n5B-CU-Lim"/>
+                        <outletCollection property="boutonsGrille" destination="juX-Ov-TLC" collectionClass="NSMutableArray" id="Q48-mC-x2S"/>
+                        <outletCollection property="boutonsGrille" destination="ayq-lG-aDH" collectionClass="NSMutableArray" id="9HC-h2-IR1"/>
+                        <outletCollection property="boutonsGrille" destination="jLY-yY-U5p" collectionClass="NSMutableArray" id="Bdl-4t-Drc"/>
+                        <outletCollection property="boutonsGrille" destination="yal-k1-uOl" collectionClass="NSMutableArray" id="85q-RD-DVN"/>
+                        <outletCollection property="boutonsGrille" destination="Kmd-c3-tB3" collectionClass="NSMutableArray" id="GnV-E9-GF5"/>
+                        <outletCollection property="boutonsGrille" destination="kIz-0J-JEk" collectionClass="NSMutableArray" id="4wg-WG-Fon"/>
+                        <outletCollection property="boutonsGrille" destination="F02-ej-x39" collectionClass="NSMutableArray" id="s2G-aU-c62"/>
+                        <outletCollection property="boutonsGrille" destination="Huy-Pv-xoK" collectionClass="NSMutableArray" id="UGe-Dn-acE"/>
+                        <outletCollection property="boutonsGrille" destination="pb6-UZ-mws" collectionClass="NSMutableArray" id="cA4-KB-lA7"/>
+                        <outletCollection property="boutonsGrille" destination="1Y5-iO-aYo" collectionClass="NSMutableArray" id="F2g-El-oAr"/>
+                        <outletCollection property="boutonsGrille" destination="peP-TS-Bb7" collectionClass="NSMutableArray" id="5Xk-6h-EIt"/>
+                        <outletCollection property="boutonsGrille" destination="vgl-B2-Sxm" collectionClass="NSMutableArray" id="oQZ-MR-jcc"/>
+                        <outletCollection property="boutonsGrille" destination="0XM-tB-VtS" collectionClass="NSMutableArray" id="Din-tY-6xq"/>
+                        <outletCollection property="boutonsGrille" destination="gWi-U9-25V" collectionClass="NSMutableArray" id="voQ-4f-QFy"/>
+                        <outletCollection property="boutonsGrille" destination="PgJ-3o-00w" collectionClass="NSMutableArray" id="dch-d3-9vX"/>
+                        <outletCollection property="boutonsGrille" destination="jWd-Lv-wbR" collectionClass="NSMutableArray" id="lst-Sk-8DG"/>
+                        <outletCollection property="boutonsGrille" destination="fdj-4c-Ppz" collectionClass="NSMutableArray" id="Y5I-gr-kxw"/>
+                        <outletCollection property="boutonsGrille" destination="xbQ-Ca-cbE" collectionClass="NSMutableArray" id="Ra2-Uh-sXJ"/>
+                        <outletCollection property="boutonsGrille" destination="Wz0-nH-gBn" collectionClass="NSMutableArray" id="wvv-8B-8s8"/>
+                        <outletCollection property="boutonsGrille" destination="xqf-yS-adQ" collectionClass="NSMutableArray" id="ffI-go-mlv"/>
+                        <outletCollection property="boutonsGrille" destination="gdz-ID-hhc" collectionClass="NSMutableArray" id="1jc-pA-9tC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

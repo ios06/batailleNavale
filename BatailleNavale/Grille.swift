@@ -97,13 +97,13 @@ class Grille: NSObject {
     {
         var libre = true
         
-        if pos + tailleBateau * 10 >= 100
+        if pos + tailleBateau * self.colonnes >= self.lignes*self.colonnes
         {
             println("le bateau va déborder vers le bas : \(pos + tailleBateau * 10)")
             return false
         }
         
-        for var a = pos ; a < pos + (tailleBateau * 10) ; a += 10
+        for var a = pos ; a < pos + (tailleBateau * self.lignes) ; a += self.lignes
         {
             if cases[a].function != nil
             {
@@ -128,9 +128,9 @@ class Grille: NSObject {
     {
         var libre = true
         
-        if pos%10 + tailleBateau  >= 10
+        if pos%self.colonnes + tailleBateau  >= self.lignes
         {
-            println("le bateau va déborder vers la droite : \(pos) va déborder jusqu'à \(pos%10 + tailleBateau)")
+            println("le bateau va déborder vers la droite : \(pos) va déborder jusqu'à \(pos%self.colonnes + tailleBateau)")
             return false
         }
         
@@ -153,10 +153,10 @@ class Grille: NSObject {
     */
     private func placementVertical (pos : Int, bateau : Bateau)
     {
-        for var a = pos ; a < pos + (bateau.getPosition().count * 10) ; a += 10
+        for var a = pos ; a < pos + (bateau.getPosition().count * self.lignes) ; a += self.lignes
         {
             cases[a].function = bateau.toucher
-            cases[a].id = (a - pos) / 10
+            cases[a].id = (a - pos) / self.lignes
             
             println("Placement vertical : \(bateau.getPosition().count) à la position \(a). id : \(cases[a].id)")
         }

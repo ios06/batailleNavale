@@ -83,14 +83,9 @@
 		3D82D4FA1B710BD800150214 /* BatailleNavale */ = {
 			isa = PBXGroup;
 			children = (
-				3D43AAB21B7200DE00C286BC /* Bateau.swift */,
-				3D82D4FD1B710BD800150214 /* AppDelegate.swift */,
-				3D82D4FF1B710BD800150214 /* ViewController.swift */,
-				3D82D5011B710BD800150214 /* Main.storyboard */,
-				3D43AAB01B71FFFA00C286BC /* Grille.swift */,
-				3D59E8011B7215B500FEF85F /* Partie.swift */,
-				3D82D5041B710BD800150214 /* Images.xcassets */,
-				3D82D5061B710BD800150214 /* LaunchScreen.xib */,
+				3DFB1E451B725D870054879C /* Controller */,
+				3DFB1E441B725D7A0054879C /* View */,
+				3DFB1E431B725D6F0054879C /* Model */,
 				3D82D4FB1B710BD800150214 /* Supporting Files */,
 			);
 			path = BatailleNavale;
@@ -119,6 +114,35 @@
 				3D82D5121B710BD800150214 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DFB1E431B725D6F0054879C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D43AAB21B7200DE00C286BC /* Bateau.swift */,
+				3D43AAB01B71FFFA00C286BC /* Grille.swift */,
+				3D59E8011B7215B500FEF85F /* Partie.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3DFB1E441B725D7A0054879C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D82D5011B710BD800150214 /* Main.storyboard */,
+				3D82D5061B710BD800150214 /* LaunchScreen.xib */,
+				3D82D5041B710BD800150214 /* Images.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3DFB1E451B725D870054879C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D82D4FD1B710BD800150214 /* AppDelegate.swift */,
+				3D82D4FF1B710BD800150214 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

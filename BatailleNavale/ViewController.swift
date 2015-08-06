@@ -11,9 +11,11 @@ import UIKit
 class ViewController: UIViewController {
     var partie = Partie()
     var scoring = 0
+    let couleurOrigine = UIColor(red: 14/255, green: 188/255, blue: 206/255, alpha: 1)
 
     @IBOutlet weak var affichageCoups: UILabel!
     @IBOutlet weak var affichageScore: UILabel!
+    @IBOutlet var boutonsGrille: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,25 +64,53 @@ class ViewController: UIViewController {
         case "raté" :
             bouton.hidden = true
             scoring -= 10
+            affichagePopUp(etat, message: "Tu n'as pas l'air très doué ! allez, essaie encore")
         case "touché" :
             bouton.backgroundColor = UIColor.orangeColor()
             scoring += 100
+            affichagePopUp(etat, message: "C'est pas mal, un coup de chance ?!")
         case "coulé" :
             bouton.backgroundColor = UIColor.grayColor()
             scoring += 500
+            affichagePopUp(etat, message: "Bon c'était pas un coup de chance")
         case "gagné" :
             bouton.backgroundColor = UIColor.grayColor()
             scoring += 1000
+            affichagePopUp(etat, message: "Bravo, tu m'as battu, voici ton score : \(scoring). C'est pas trop mal")
+            nouvellePartie()
         default:
             break
         }
 
         
-        let alertController = UIAlertController(title: "Bataille Navalle !!", message:
-            "\(etat)!", preferredStyle: UIAlertControllerStyle.Alert)
-        alertController.addAction(UIAlertAction(title: "Continuer", style: UIAlertActionStyle.Default,handler: nil))
+        
+    }
+    
+    func affichagePopUp(titre : String, message : String)
+    {
+        var titreBouton : String
+        
+        titreBouton = "Continuer"
+        if titre == "gagné"
+        {
+            titreBouton = "Recommencer"
+        }
+        let alertController = UIAlertController(title: titre, message:
+            message, preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: titreBouton, style: UIAlertActionStyle.Default,handler: nil))
         
         self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func nouvellePartie()
+    {
+        partie = Partie()
+        scoring = 0
+        for a in boutonsGrille
+        {
+            a.hidden = false
+            a.backgroundColor = couleurOrigine
+        }
     }
 }
 
