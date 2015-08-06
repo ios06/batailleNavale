@@ -30,34 +30,40 @@ class Partie: NSObject {
     {
         nombreDeCoups++
         var etat : Bool!
-        var f :(Int->Bool)!
+        var f :Bateau!
         var i : Int!
-        let raté = "raté"
-        let touché = "touché"
-        let coulé = "coulé"
-        let gagné = "gagné"
+        let rate = "Raté"
+        let touche = "Touché"
+        let coule = "Coulé"
+        let gagne = "Gagné"
         
         (f,i) = grille.cases[tag]
-        etat = toucheCoule(function: f,id: i)
+        etat = toucheCoule(bateau: f,id: i)
         
         switch etat {
         case nil :
-            return raté
+            return rate
+            
         case false :
-            return touché
+            return touche
+            
         case true :
-            if (grille.porteAvion.coule && grille.cuirasse.coule && grille.torpilleur.coule && grille.croiseur.coule){
-                return gagné
-            } else {
-                return coulé
+            for bateau in grille.flote
+            {
+                if !bateau.coule
+                {
+                    return coule
+                }
             }
+            return gagne
+            
         default:
-            return raté
+            return rate
         }
     }
     
     /**
-    fonction générique traitant la fonction se trouvant dans la case selectionnée
+    fonction générique traitant la fonction toucher des bateaux présents
     
     :param: function fonction "bateau.toucher" du bateau à traiter.
     :param: id       id de bateau.case à mettre à true (true = touché)
@@ -67,16 +73,16 @@ class Partie: NSObject {
     - false si un bateau a été touché mais pas coulé. 
     - true si le bateau a été coulé
     */
-    func toucheCoule (#function :(Int->Bool)!, id : Int!)->Bool!
+    func toucheCoule (#bateau :Bateau!, id : Int!)->Bool!
     {
-        if id == nil
+        if id == nil || bateau == nil
         {
             return nil
         }
         else
         {
             println("id : \(id)")
-            return function(id)
+            return bateau.toucher(id)
         }
     }
 }

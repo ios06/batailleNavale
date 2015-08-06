@@ -11,20 +11,18 @@ import UIKit
 class Grille: NSObject {
     var lignes : Int
     var colonnes : Int
-    var cases : [(function :(Int->Bool)!,id : Int!)]
-    var porteAvion : PorteAvion
-    var cuirasse : Cuirasse
-    var torpilleur : Torpilleur
-    var croiseur : Croiseur
+    var cases : [(bateau : Bateau!,id : Int!)]
+    var flote : [Bateau]
     
     init(lignes : Int, colonnes : Int) {
         self.lignes = lignes
         self.colonnes = colonnes
         cases = Array(count : self.lignes*self.colonnes, repeatedValue : (nil,nil))
-        self.porteAvion = PorteAvion()
-        self.cuirasse = Cuirasse()
-        self.torpilleur = Torpilleur()
-        self.croiseur = Croiseur()
+        self.flote = []
+        self.flote.append(PorteAvion())
+        self.flote.append(Cuirasse())
+        self.flote.append(Torpilleur())
+        self.flote.append(Croiseur())
         println("initialisation de la grille")
         
 
@@ -35,10 +33,10 @@ class Grille: NSObject {
     */
     func setBateauxSurGrille()
     {
-        setPositionBateau(self.porteAvion)
-        setPositionBateau(self.cuirasse)
-        setPositionBateau(self.torpilleur)
-        setPositionBateau(self.croiseur)
+        for bateau in self.flote
+        {
+            setPositionBateau(bateau)
+        }
     }
     
     /**
@@ -105,7 +103,7 @@ class Grille: NSObject {
         
         for var a = pos ; a < pos + (tailleBateau * self.lignes) ; a += self.lignes
         {
-            if cases[a].function != nil
+            if cases[a].bateau != nil
             {
                 libre = false
                 break
@@ -136,7 +134,7 @@ class Grille: NSObject {
         
         for a in pos...(pos + (tailleBateau) - 1)
         {
-            if cases[a].function != nil
+            if cases[a].bateau != nil
             {
                 libre = false
                 break
@@ -155,7 +153,7 @@ class Grille: NSObject {
     {
         for var a = pos ; a < pos + (bateau.getPosition().count * self.lignes) ; a += self.lignes
         {
-            cases[a].function = bateau.toucher
+            cases[a].bateau = bateau
             cases[a].id = (a - pos) / self.lignes
             
             println("Placement vertical : \(bateau.getPosition().count) à la position \(a). id : \(cases[a].id)")
@@ -171,7 +169,7 @@ class Grille: NSObject {
     {
         for a in pos...(pos + (bateau.getPosition().count) - 1)
         {
-            cases[a].function = bateau.toucher
+            cases[a].bateau = bateau
             cases[a].id = (a - pos)
             println("Placement horizontal : \(bateau.getPosition().count) à la position \(a). id : \(cases[a].id)")
         }

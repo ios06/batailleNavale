@@ -61,19 +61,19 @@ class ViewController: UIViewController {
     {
         
         switch etat {
-        case "raté" :
+        case "Raté" :
             bouton.hidden = true
             scoring -= 10
             affichagePopUp(etat, message: "Tu n'as pas l'air très doué ! allez, essaie encore")
-        case "touché" :
+        case "Touché" :
             bouton.backgroundColor = UIColor.orangeColor()
             scoring += 100
             affichagePopUp(etat, message: "C'est pas mal, un coup de chance ?!")
-        case "coulé" :
+        case "Coulé" :
             bouton.backgroundColor = UIColor.grayColor()
             scoring += 500
             affichagePopUp(etat, message: "Bon c'était pas un coup de chance")
-        case "gagné" :
+        case "Gagné" :
             bouton.backgroundColor = UIColor.grayColor()
             scoring += 1000
             affichagePopUp(etat, message: "Bravo, tu m'as battu, voici ton score : \(scoring). C'est pas trop mal")
@@ -91,7 +91,7 @@ class ViewController: UIViewController {
         var titreBouton : String
         
         titreBouton = "Continuer"
-        if titre == "gagné"
+        if titre == "Gagné"
         {
             titreBouton = "Recommencer"
         }
